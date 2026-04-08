@@ -1,0 +1,36 @@
+.container {
+  padding: 0px 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cardsWrapper {
+  position: relative;
+}
+
+.cards__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.glowCenter {
+  position: absolute;
+  width: 420px;
+  height: 220px;
+  top: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+  background: radial-gradient(
+    circle,
+    rgba(118, 60, 172, 0.7) 0%,
+    transparent 70%
+  );
+  filter: blur(40px);
+  pointer-events: none;
+}

@@ -1,0 +1,22 @@
+.container {
+  padding: 0px 20%;
+  display: flex;
+  align-items: center;
+  height: 113px;
+  justify-content: space-between;
+
+  background-color: var(--secondary);
+
+  margin-bottom: 140px;
+}
+
+.container ul {
+  display: flex;
+  gap: 30px;
+}
+
+.logo {
+  height: 40px;
+  object-fit: contain;
+  cursor: pointer;
+}
