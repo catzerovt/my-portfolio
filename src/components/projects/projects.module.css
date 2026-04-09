@@ -1,0 +1,11 @@
+.container {
+    padding : var(--main-content-padding);
+}
+
+.project__card {
+    display:grid;
+    grid-template-columns: 1fr 200px;
+    gap: 10px;          
+}
+
+.project__card

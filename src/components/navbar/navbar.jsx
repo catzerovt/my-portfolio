@@ -9,18 +9,20 @@ const links = [
 
 export function NavBar() {
   return (
-    <nav className={styles.container}>
-      <a href="/">
-        <img src={logo} alt="logo" className={styles.logo} />
-      </a>
+    <nav className={styles.bar}>
+      <div className={styles.container}>
+        <a href="/" className={styles.logoLink}>
+          <img src={logo} alt="logo" className={styles.logo} />
+        </a>
 
-      <ul>
-        {links.map((link) => (
-          <li key={link.id}>
-            <a>{link.label}</a>
-          </li>
-        ))}
-      </ul>
+        <ul>
+          {links.map((link) => (
+            <li key={link.id}>
+              <a href={link.to}>{link.label}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </nav>
   );
 }
