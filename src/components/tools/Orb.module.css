@@ -1,0 +1,107 @@
+.wrapper {
+  position: relative;
+  width: 520px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.rings {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(113, 39, 186, 0.35);
+}
+
+.ring1 {
+  width: 260px;
+  height: 110px;
+  border-color: rgba(113, 39, 186, 0.5);
+}
+
+.ring2 {
+  width: 340px;
+  height: 140px;
+  border-color: rgba(113, 39, 186, 0.35);
+}
+
+.ring3 {
+  width: 420px;
+  height: 170px;
+  border-color: rgba(113, 39, 186, 0.2);
+}
+
+.core {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #8f52d8, #7127ba 60%, #3d1080);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow:
+    0 0 40px rgba(113, 39, 186, 0.65),
+    0 0 110px rgba(113, 39, 186, 0.3),
+    0 0 180px rgba(113, 39, 186, 0.12);
+}
+
+.glow {
+  position: absolute;
+  width: 420px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(113, 39, 186, 0.45) 0%, transparent 70%);
+  filter: blur(40px);
+  z-index: -1;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  opacity: 0.95;
+}
+
+.dots {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.dot {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(168, 85, 247, 0.65);
+}
+
+.dot1 {
+  top: 88px;
+  left: 88px;
+}
+
+.dot2 {
+  top: 70px;
+  right: 120px;
+}
+
+.dot3 {
+  bottom: 82px;
+  left: 120px;
+}
+
+.dot4 {
+  bottom: 74px;
+  right: 92px;
+}
