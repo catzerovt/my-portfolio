@@ -20,12 +20,11 @@ export function Tools() {
         </div>
 
 <div className={styles.lines}>
-<div className={styles.line} style={{ left: "10%", transform: "rotate(-18deg)", opacity: 0.5 }} />
-<div className={styles.line} style={{ left: "25%", transform: "rotate(-10deg)", opacity: 0.7 }} />
-<div className={styles.line} style={{ left: "40%", transform: "rotate(-4deg)", opacity: 1 }} />
-<div className={styles.line} style={{ left: "60%", transform: "rotate(4deg)", opacity: 1 }} />
-<div className={styles.line} style={{ left: "75%", transform: "rotate(10deg)", opacity: 0.7 }} />
-<div className={styles.line} style={{ left: "90%", transform: "rotate(18deg)", opacity: 0.5 }} />
+  <div className={styles.line} style={{ left: "12%", transform: "rotate(-20deg)", opacity: 0.55 }} />
+  <div className={styles.line} style={{ left: "30%", transform: "rotate(-10deg)", opacity: 0.8 }} />
+  <div className={styles.line} style={{ left: "50%", transform: "rotate(0deg)", opacity: 1 }} />
+  <div className={styles.line} style={{ left: "70%", transform: "rotate(10deg)", opacity: 0.8 }} />
+  <div className={styles.line} style={{ left: "88%", transform: "rotate(20deg)", opacity: 0.55 }} />
 </div>
 
         <div className={styles.orb}>
