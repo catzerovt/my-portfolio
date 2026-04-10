@@ -1,12 +1,17 @@
 import styles from "./SocialIcons.module.css";
+import {
+  siReact,
+  siJavascript,
+  siCss,
+  siFigma,
+  siGit,
+} from "simple-icons";
 
 const ROW_1 = [
-  { label: "Figma", color: "#F24E1E", letter: "Fi" },
-  { label: "React", color: "#61DAFB", letter: "Re" },
-  { label: "C", color: "#659AD2", letter: "C" },
-  { label: "Redux", color: "#764ABC", letter: "Rx" },
-  { label: "JavaScript", color: "#F7DF1E", letter: "JS" },
-  { label: "CSS", color: "#1572B6", letter: "CSS" },
+  { label: "Figma", color: "#F24E1E", icon: siFigma },
+  { label: "React", color: "#61DAFB", icon: siReact },
+  { label: "JavaScript", color: "#F7DF1E", icon: siJavascript },
+  { label: "CSS", color: "#1572B6", icon: siCss },
 ];
 
 const ROW_2 = [
@@ -16,18 +21,23 @@ const ROW_2 = [
   { label: "Git", color: "#F05032", letter: "Git" },
 ];
 
-function IconBubble({ label, color, letter }) {
+function IconBubble({ label, color, icon }) {
   return (
     <div
       className={styles.bubble}
       title={label}
       style={{ "--icon-color": color }}
     >
-      <span className={styles.letter}>{letter}</span>
+      {icon ? (
+        <svg viewBox="0 0 24 24" className={styles.icon}>
+          <path d={icon.path} />
+        </svg>
+      ) : (
+        <span className={styles.letter}>{label}</span>
+      )}
     </div>
   );
 }
-
 export default function SocialIcons() {
   return (
     <div className={styles.container}>
