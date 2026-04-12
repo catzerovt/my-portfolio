@@ -1,7 +1,7 @@
 import styles from "./hero.module.css";
 import { HeroArrow } from "../../assets/svgs/hero-arrow";
 import { GradientElement } from "../shared/gradient-element";
-import memoji from "../../assets/tania-memoji.png";
+import memoji from "../../assets/tania-2.png";
 
 export function Hero() {
   return (

@@ -3,14 +3,20 @@ import styles from "./biography.module.css";
 export function Biography() {
   return (
     <section className={styles.container}>
-      <p>I'm a Software Engineer</p>
+      <h2 className={styles.title}>
+        I'm a Fullstack Developer in progress
+        <br />
+        
+      </h2>
 
-      <p>Currently, I'm a Software Engineer at Codigo</p>
+      <p className={styles.subtitle}>
+        Currently learning Fullstack Development at TECSUP Bootcamp
+      </p>
 
-      <p>
-        A self-taught UI/UX designer, functioning in the industry for 3+ years
-        now. I make meaningful and delightful digital products that create an
-        equilibrium between user needs and business goals.
+      <p className={styles.description}>
+        I enjoy designing and developing digital products that solve real
+        problems. I'm especially drawn to UI/UX, where I can create experiences
+        that feel simple, intentional, and human.
       </p>
     </section>
   );

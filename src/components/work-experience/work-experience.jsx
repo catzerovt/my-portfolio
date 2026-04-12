@@ -44,7 +44,7 @@ const workCards = [
 export function WorkExperience() {
   return (
     <div className={styles.container}>
-      <h2>Work Experience</h2>
+      <h2 className={styles.workTitle}>Work Experience</h2>
 
 <div className={styles.cardsWrapper}>
   <div className={styles.cards__container}>

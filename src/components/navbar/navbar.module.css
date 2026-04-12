@@ -5,15 +5,13 @@
 }
 
 .container {
-  height: 88px;
+  height: 96px;
   width: min(1200px, 100%);
   margin: 0 auto;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  padding: 0 48px;
+  padding: 0 56px;
 }
 
 .logoLink {
@@ -22,7 +20,7 @@
 }
 
 .logo {
-  height: 40px;
+  height: 48px;
   object-fit: contain;
   cursor: pointer;
 }
@@ -30,32 +28,35 @@
 .container ul {
   display: flex;
   align-items: center;
-  gap: 56px;
+  gap: 72px;
 }
 
 .container a {
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  color: #e7defc;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #ffffff;
   text-decoration: none;
   position: relative;
   transition: color 0.3s ease;
+  display: inline-block;
 }
 
 .container a::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -6px;
-  width: 0%;
+  bottom: -8px;
+  width: 0;
   height: 2px;
   background: var(--tertiary);
+  border-radius: 999px;
   transition: width 0.3s ease;
 }
 
 .container a:hover {
-  color: white;
+  color: #ffffff;
 }
 
 .container a:hover::after {

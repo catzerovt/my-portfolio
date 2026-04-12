@@ -1,0 +1,164 @@
+.card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 0;
+  min-height: 360px;
+}
+
+.reverse > * {
+  direction: ltr;
+}
+
+.visual {
+  position: relative;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+.imageBg {
+  position: absolute;
+  width: 460px;
+  height: 260px;
+  background: #2b0b3a;
+  border-radius: 10px;
+  z-index: 1;
+  box-shadow: 0 0 40px rgba(43, 11, 58, 0.35);
+}
+
+.right {
+  height: 290px;
+  width: 46%;
+  position: absolute;
+  right: 0;
+  border-radius: 10px;
+  background-color: #2b0b3a;
+  overflow: visible;
+  box-shadow: 0 0 40px rgba(43, 11, 58, 0.35);
+}
+
+.glow {
+  position: absolute;
+  width: 620px;
+  height: 640px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle,
+    rgba(152, 87, 211, 0.72) 0%,
+    rgba(152, 87, 211, 0.34) 30%,
+    rgba(152, 87, 211, 0.14) 52%,
+    transparent 74%
+  );
+  filter: blur(70px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.right img {
+  width: 88%;
+  height: 88%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 10px;
+  filter: grayscale(100%) brightness(0.9);
+  transition: filter 0.35s ease, transform 0.35s ease;
+  z-index: 2;
+}
+
+.image {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+  position: relative;
+  z-index: 2;
+  filter: grayscale(100%) brightness(0.9);
+  transition: filter 0.35s ease, transform 0.35s ease;
+}
+
+.projectCard:hover .right img {
+  filter: grayscale(0%) brightness(1);
+  transform: scale(1.005);
+}
+
+.card:hover .image {
+  filter: grayscale(0%) brightness(1);
+  transform: scale(1.01);
+}
+
+.content {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card:not(.reverse) .content {
+  left: 52px;
+}
+
+.reverse .content {
+  right: 88px;
+  text-align: right;
+  align-items: flex-end;
+}
+
+.eyebrow {
+  font-size: 16px;
+  color: #9857d3;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 600;
+  color: white;
+  font-family: var(--special-font);
+}
+
+.descriptionBox {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.16),
+    rgba(255, 255, 255, 0.06)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: 14px;
+  padding: 22px 24px;
+  max-width: 560px;
+  position: relative;
+  z-index: 4;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+}
+
+.description {
+  font-size: 15px;
+  line-height: 1.7;
+  color: white;
+}
+
+.icons {
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
+  position: relative;
+  z-index: 10;
+}
+
+.icons img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.reverse .icons {
+  justify-content: flex-end;
+}

@@ -14,13 +14,19 @@
   position: relative;
 }
 
+.left__side:hover .memoji {
+  transform: scale(1.03);
+}
+
 .memoji {
-  width: 220px;
+  width: 250px;
   height: auto;
   object-fit: contain;
   display: block;
   position: relative;
   z-index: 1;
+  transition: transform 0.4s ease;
+
 }
 
 .right__side {

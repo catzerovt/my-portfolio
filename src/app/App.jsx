@@ -5,6 +5,8 @@ import { NavBar } from "../components/navbar/navbar";
 import { Biography } from "../components/biography/biography";
 import { WorkExperience } from "../components/work-experience/work-experience.jsx";
 import { Tools } from "../components/tools/tools";
+import { Projects } from "../components/projects/projects";
+import { Contact } from "../components/contact/contact";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Biography />
       <WorkExperience />
       <Tools />
+      <Projects />
+      <Contact />
     </main>
   );
 }
