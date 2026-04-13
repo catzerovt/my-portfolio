@@ -35,3 +35,16 @@
   letter-spacing: 0.02em;
   color: #ffffff;
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 24px;
+    margin-top: 0;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .description {
+    font-size: 16px;
+  }
+}

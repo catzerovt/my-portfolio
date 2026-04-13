@@ -104,3 +104,26 @@
   transform: translateY(-1px);
   box-shadow: 0 0 14px rgba(118, 60, 172, 0.22);
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    min-height: unset;
+    padding: 16px 18px;
+    gap: 16px;
+  }
+
+  .imageWrapper,
+  .image {
+    width: 72px;
+    height: 72px;
+  }
+
+  .right__side h4 {
+    font-size: 17px;
+  }
+
+  .right__side p {
+    max-width: 100%;
+  }
+}

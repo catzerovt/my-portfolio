@@ -16,3 +16,11 @@
   filter: blur(40px);
   pointer-events: none;
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: 220px;
+    height: 220px;
+    filter: blur(30px);
+  }
+}
