@@ -1,16 +1,30 @@
-# React + Vite
+# 🌙 Tania Pastor — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio built with React and Vite, showcasing my projects, skills, and experience as a Fullstack Developer in progress.
 
-Currently, two official plugins are available:
+## ✨ About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This portfolio reflects my passion for UI/UX and frontend development — designed with intention, built with care. It features smooth animations, a dark purple aesthetic, responsive design, and a working contact form powered by EmailJS.
 
-## React Compiler
+## 🛠 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** — component-based UI
+- **Vite** — fast dev server and build tool
+- **CSS Modules** — scoped, maintainable styles
+- **EmailJS** — contact form without a backend
+- **canvas-confetti** — celebration animation on form submit
+- **simple-icons** — tech stack icon bubbles
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Fully responsive (mobile, tablet, desktop)
+- Animated hero section with memoji
+- Interactive tech stack bubbles
+- Project cards with hover effects
+- Contact form with toast notifications and confetti
+- Deployed on GitHub Pages
+
+## 📬 Contact
+
+Made by **Tania Pastor**
+[catzero.dev@gmail.com](mailto:catzero.dev@gmail.com)
