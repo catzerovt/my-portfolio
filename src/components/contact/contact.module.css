@@ -1,4 +1,4 @@
-.container {
+/* .container {
   padding: 120px 20%;
   text-align: center;
 
@@ -61,4 +61,98 @@
   opacity: 1;
   transform: translateY(-2px) scale(1.08);
   filter: drop-shadow(0 0 8px rgba(152, 87, 211, 0.6));
+} */
+
+.container {
+  position: relative;
+  overflow: hidden;
+
+  padding: 140px 20% 140px;
+  display: grid;
+  grid-template-columns: 1fr 460px;
+  gap: 48px;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 2;
+}
+
+.right {
+  z-index: 2;
+  margin-top: 40px;
+}
+
+.container h2 {
+  font-size: 34px;
+  font-weight: 600;
+  font-family: var(--special-font);
+  color: white;
+}
+
+.container p {
+  color: rgba(255, 255, 255, 0.72);
+  max-width: 560px;
+  line-height: 1.7;
+}
+
+.highlight {
+  color: #9857d3;
+}
+
+.email {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #9857d3;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.email:hover {
+  opacity: 0.8;
+}
+
+.socials {
+  margin-top: 18px;
+  display: flex;
+  gap: 18px;
+}
+
+.socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: rgba(255, 255, 255, 0.78);
+  transition: transform 0.3s ease, opacity 0.3s ease, filter 0.3s ease;
+}
+
+.icon:hover {
+  opacity: 1;
+  transform: translateY(-2px) scale(1.08);
+  filter: drop-shadow(0 0 8px rgba(152, 87, 211, 0.6));
+}
+
+.footerGlow {
+  position: absolute;
+  left: 50%;
+  bottom: -180px;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 420px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.16), transparent 26%),
+    radial-gradient(circle, rgba(118, 60, 172, 0.6) 0%, transparent 66%);
+  filter: blur(60px);
+  opacity: 0.6;
+  z-index: 1;
+  pointer-events: none;
 }

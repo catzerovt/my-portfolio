@@ -8,6 +8,7 @@ import { Tools } from "../components/tools/tools";
 import { Projects } from "../components/projects/projects";
 import { Contact } from "../components/contact/contact";
 
+
 function App() {
   return (
     <main>
@@ -18,6 +19,7 @@ function App() {
       <Tools />
       <Projects />
       <Contact />
+      
     </main>
   );
 }

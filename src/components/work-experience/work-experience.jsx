@@ -2,7 +2,7 @@ import styles from "./work-experience.module.css";
 
 import { WorkCard } from "../shared/work-card/work-card";
 
-// Images
+
 import SpecialSave from "../../assets/custom/special-save.png";
 import Bubble from "../../assets/custom/bubble.png";
 import Cup from "../../assets/custom/cup.png";
@@ -14,37 +14,37 @@ const workCards = [
   {
     id: 1,
     img: { src: SpecialSave, alt: "this is a custom image" },
-    title: "CIB on the Mobile",
+    title: "Frontend Development",
     description:
-      "Take your client onboard seamlessly by our amazing tool of digital onboard process.",
+      "Built multiple web applications using HTML, CSS, JavaScript, and React, focusing on structure, layout, and usability.",
   },
   {
     id: 2,
     img: { src: Bubble, alt: "this is a custom image" },
-    title: "CIB on the Mobile",
+    title: "Content Creator • Streamer",
     description:
-      "Take your client onboard seamlessly by our amazing tool of digital onboard process.",
+      "Built and maintained an online community for 4+ years, developing communication, consistency, and audience engagement skills.",
   },
   {
     id: 3,
     img: { src: Cup, alt: "this is a custom image" },
-    title: "CIB on the Mobile",
+    title: "3D Avatar & Animation",
     description:
-      "Take your client onboard seamlessly by our amazing tool of digital onboard process.",
+      "Created 3D avatars and animations, exploring visual design, creativity, and digital expression.",
   },
   {
     id: 4,
     img: { src: Gotero, alt: "this is a custom image" },
-    title: "CIB on the Mobile",
+    title: "English Teacher",
     description:
-      "Take your client onboard seamlessly by our amazing tool of digital onboard process.",
+      "Taught English to different learners, strengthening communication, adaptability, and clarity.",
   },
 ];
 
 export function WorkExperience() {
   return (
     <div className={styles.container}>
-      <h2 className={styles.workTitle}>Work Experience</h2>
+      <h2 className={styles.workTitle}>Experience & Creative Work</h2>
 
 <div className={styles.cardsWrapper}>
   <div className={styles.cards__container}>
